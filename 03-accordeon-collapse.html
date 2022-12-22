@@ -17,6 +17,11 @@
         <p x-show="isOpen" x-collapse>Duis sed imperdiet sem. Proin suscipit luctus purus eget condimentum.</p>
       </section>
 
+      <section x-data="{isOpen:false}">
+        <button @click="isOpen = ! isOpen">bouton2</button>
+        <p x-show="isOpen" x-collapse>Quisquam sapiente ipsa quasi doloremque ut eos ratione sint natus accusantium.</p>
+      </section>
+
   
   </body>
 </html>

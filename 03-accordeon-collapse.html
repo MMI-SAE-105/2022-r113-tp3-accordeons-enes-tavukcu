@@ -4,9 +4,19 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script defer src="https://unpkg.com/@alpinejs/collapse@3.x.x/dist/cdn.min.js"></script>
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
     <title>Accordéon avec x-collapse</title>
   </head>
   <body>
-    <h1>Accordéon avec <code>x-collapse</code></h1>
+
+    <h1>Accordéon avec x-collapse</h1>
+    <div>
+      <section x-data="{isOpen:false}">
+        <button @click="isOpen = ! isOpen">bouton1</button>
+        <p x-show="isOpen" x-collapse>Duis sed imperdiet sem. Proin suscipit luctus purus eget condimentum.</p>
+      </section>
+
+  
   </body>
 </html>

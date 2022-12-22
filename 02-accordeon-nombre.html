@@ -8,11 +8,17 @@
     <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
   </head>
   <body>
-    <div x-data="{ open: false }">
-      <button @click="open = ! open">Toggle</button>
-      <div  x-transition.scale.origin.top>
-</div>
-</div>
+    <h1>Accordéon mémorisant par un nombre l'élèment ouvert</h1>
+    <div x-data="{ open: 1 }">
+      <section>
+        <button @click="open = 1">bouton 1</button>
+        <span x-show="open == 1" x-transition>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ut ultrices sem.
+        </span>
+      </section>
+
+    </div>
+
 
   </body>
 </html>
